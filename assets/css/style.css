@@ -309,3 +309,26 @@ footer {
   color: #cbd5f5;
   font-size: 0.95rem;
 }
+
+.video-frame {
+  width: 100%;
+  max-width: 45%;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+/* Responsive video */
+.video-frame iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .media img,
+  .video-frame {
+    max-width: 100%;
+  }
+}
