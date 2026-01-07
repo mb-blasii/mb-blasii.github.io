@@ -209,8 +209,11 @@ footer {
 
 
 .media {
-  margin-top: 12px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .media img {
@@ -219,12 +222,6 @@ footer {
   border: 1px solid #1e293b;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   cursor: zoom-in;
-}
-
-@media (max-width: 600px) {
-  .media img {
-    max-width: 100%;
-  }
 }
 
 .back-btn {
@@ -311,7 +308,6 @@ footer {
 }
 
 .video-frame {
-  width: 100%;
   max-width: 45%;
   border-radius: 10px;
   border: 1px solid #1e293b;
@@ -326,7 +322,7 @@ footer {
   border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .media img,
   .video-frame {
     max-width: 100%;
