@@ -1,0 +1,196 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+.site-header {
+  position: relative;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+  padding: 30px 20px 60px;
+}
+
+/* --------------------
+   HERO BLOCK
+-------------------- */
+.hero-block {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-block h1 {
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-block h2 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* --------------------
+   LANGUAGE SWITCH
+-------------------- */
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 10;
+}
+
+.lang-switch img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.25);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+  .lang-switch {
+    flex-direction: row;
+  }
+}
+
+/* --------------------
+   LAYOUT
+-------------------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.section-title {
+  margin: 30px 0 20px;
+  font-size: 1.6rem;
+  color: #f8fafc;
+}
+
+.intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 30px;
+  font-size: 1.05rem;
+  color: #cbd5f5;
+}
+
+/* --------------------
+   GRID
+-------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* --------------------
+   CARDS
+-------------------- */
+.card {
+  background: #020617;
+  border-radius: 14px;
+  padding: 22px 24px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card h2,
+.card h3 {
+  margin-bottom: 12px;
+  color: #f8fafc;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li + li {
+  margin-top: 8px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #60a5fa;
+  transition: color 0.15s ease;
+}
+
+.card a:hover {
+  color: #93c5fd;
+}
+
+/* --------------------
+   FEATURED
+-------------------- */
+.featured {
+  margin-top: 40px;
+  border-left: 5px solid #f59e0b;
+}
+
+.contacts {
+    margin-top: 40px;
+}
+
+/* --------------------
+   BUTTON
+-------------------- */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* --------------------
+   CONTACTS
+-------------------- */
+.contacts ul {
+  list-style: none;
+}
+
+.contacts li + li {
+  margin-top: 6px;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
