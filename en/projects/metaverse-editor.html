@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Metaverse World Editor – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/en/" class="back-btn">← Back to portfolio</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Metaverse World Editor</h1>
+    <h2>Runtime Editing · Modular UI · Data-Driven Worlds</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>Project Overview</h2>
+    <p>
+      A custom runtime world editor designed for a metaverse application, allowing users
+      to create, modify, and manage virtual environments directly in-game.
+    </p>
+    <p>
+        The editor interface mimics the Unity user interface to provide a familiar experience to
+        more experienced developers, while removing all the unnecessary complexity for artists and casual world builders.
+    </p>
+    <br>
+    <p>
+      Built with a modular architecture, the editor supports dynamic entity management,
+      component-based systems, and real-time world updates without requiring traditional
+      development tools.
+    </p>
+    <br>
+    <p>
+      The software focuses on scalability, performance, and usability, enabling both
+      creators and non-technical users to shape interactive worlds through a clean,
+      intuitive interface.
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>Screenshots</h2>
+
+    <div class="media">
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/1RKSZgb1FOM"
+          title="Metaverse World Editor – Demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>Features</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>Runtime World Editing</strong>
+        <span>Edit scenes, entities, and properties on a runtime application 
+            without needs to learn to use a full game engine.</span>
+      </li>
+
+      <li>
+        <strong>Entity & Component Architecture</strong>
+        <span>Custom MetaEntity and MetaComponent system for flexible, data-driven world building.</span>
+      </li>
+
+      <li>
+        <strong>Dynamic Asset Browser</strong>
+        <span>Runtime-loaded assets with extensible filtering, previews, and category management. 
+            Synced with the backend server to retrieve all user and store assets.</span>
+      </li>
+
+      <li>
+        <strong>Live Scene Reconstruction</strong>
+        <span>Worlds can be rebuilt from serialized data to support persistence and rapid iteration.
+            Data is optimized to achieve minimum network usage and fast loading times without information loss.
+        </span>
+      </li>
+
+      <li>
+        <strong>Performance-Oriented Design</strong>
+        <span>Optimized runtime workflows to keep editing responsive even in complex environments.</span>
+      </li>
+
+      <li>
+        <strong>Editor & Runtime Separation</strong>
+        <span>Core systems shared between the editor and the client to ensure consistency and maintainability.</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>
