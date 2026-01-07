@@ -19,7 +19,7 @@ body {
   position: relative;
   background: #020617;
   border-bottom: 1px solid #1e293b;
-  padding: 30px 20px 60px;
+  padding: 50px 20px 60px;
 }
 
 /* --------------------
@@ -84,6 +84,14 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px 60px;
+}
+
+.container > * {
+  margin-bottom: 15px;
+}
+
+.container > *:last-child {
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -193,4 +201,111 @@ footer {
   padding: 30px 20px;
   font-size: 0.85rem;
   color: #94a3b8;
+}
+
+/* --------------------
+   PROJECT PAGE MEDIA
+-------------------- */
+
+
+.media {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.media img {
+  max-width: 45%;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  cursor: zoom-in;
+}
+
+@media (max-width: 600px) {
+  .media img {
+    max-width: 100%;
+  }
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  background: rgba(15, 23, 42, 0.75); /* dark glass */
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+
+  backdrop-filter: blur(6px);
+  z-index: 1001;
+
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.back-btn:hover {
+  background: rgba(30, 41, 59, 0.9);
+  transform: translateX(-2px);
+}
+
+/* --------------------
+   IMAGE LIGHTBOX
+-------------------- */
+
+/* overlay */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+
+  z-index: 2000;
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.feature-list {
+  list-style-type: disc !important;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  margin-top: 16px;
+}
+
+.feature-list li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.feature-list li strong {
+  display: block;
+  color: #e5e7eb;
+  margin-bottom: 4px;
+}
+
+.feature-list li span {
+  display: block;
+  margin-left: 1rem;
+  color: #cbd5f5;
+  font-size: 0.95rem;
 }
