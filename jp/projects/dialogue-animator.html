@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>アニメータ連携対話システム – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>アニメータ連携対話システム</h1>
+    <h2>アニメーションツール・ナラティブシステム・Unityエディタ拡張</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      ノードベースの対話システムの簡易代替として作られたUnityツールで、対話の流れを
+      UnityのAnimatorに密接に結びつけることを目的としています。
+    </p>
+    <p>
+      Animatorのステートを対話ノードの視覚的なソースとして扱い、StateMachineBehaviourで
+      対話ロジックを実行することで、自然で制御されたフローを作成できます。
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>スクリーンショット</h2>
+
+    <div class="media">
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/7EoNNo13zzA"
+          title="アニメータ連携対話システム – デモ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <img src="/assets/img/projects/dialogue-animator/screenshot-01.png"
+           alt="アニメータ連携対話システム エディタ画面"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>ビジュアルステートマシン</strong>
+        <span>デザイナーが扱いやすいインターフェイスで、対話ロジックとアニメーションを連携できます。</span>
+      </li>
+
+      <li>
+        <strong>ループと分岐</strong>
+        <span>ステートを接続してループを作ったり、複数の出口を持たせてプレイヤー選択で分岐させられます。</span>
+      </li>
+
+      <li>
+        <strong>ボイスオーバー</strong>
+        <span>各台詞に音声を割り当てられ、ローカライズにも対応します。</span>
+      </li>
+
+      <li>
+        <strong>ローカライズ対応</strong>
+        <span>文字列キーで対話を管理し、ゲームのローカライズシステムと連携できます。</span>
+      </li>
+
+      <li>
+        <strong>モジュラー設計</strong>
+        <span>拡張を意識した設計で、新しいアニメーションシステムやナラティブツールを追加できます。</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

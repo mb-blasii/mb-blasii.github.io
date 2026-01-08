@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Duomondo（モバイルゲーム） – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Duomondo</h1>
+    <h2>モバイルゲーム・位置情報ベースのゲームプレイ・バックエンド</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      Duomondoは、PokemonGOの探索要素に触発された位置情報ベースのモバイルゲームで、
+      場所の発見や周囲とのインタラクションを促す設計です。
+    </p>
+    <p>
+      GPSを活用したゲームプレイに進行要素、収集コンテンツ、クエスト、ライトなソーシャル要素を組み合わせ、
+      カジュアル層や若年層を意識した体験を提供します。
+    </p>
+    <p>
+      本作はイタリア国内での限定リリースでした。私はUnity開発者として、ゲームプレイシステム、
+      モバイル最適化、技術実装、バックエンド設計に携わりました。
+    </p>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="card">
+    <h2>スクリーンショット</h2>
+
+    <div class="media">
+
+      <img src="/assets/img/projects/duomondo/screenshot-01.png"
+           alt="Duomondo マップ探索画面"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo/screenshot-02.png"
+           alt="Duomondo map exploration"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo/screenshot-03.png"
+           alt="Duomondo map exploration"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo/screenshot-04.png"
+           alt="Duomondo map exploration"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>位置情報ベースのゲームプレイ</strong>
+        <span>実世界のGPS位置情報を活用して探索やゲーム内インタラクションを駆動します。</span>
+      </li>
+
+      <li>
+        <strong>Googleジオスペーシャル統合</strong>
+        <span>Google MapsやGeospatial APIと連携し、正確な位置表示を実現しています。</span>
+      </li>
+
+      <li>
+        <strong>進行・収集システム</strong>
+        <span>場所を訪れアクティビティを達成することでコンテンツや報酬、実績を解除できます。</span>
+      </li>
+
+      <li>
+        <strong>モバイル向けUX</strong>
+        <span>タッチ操作、短時間セッション、屋外での利用を考慮した設計です。</span>
+      </li>
+
+      <li>
+        <strong>マップ統合</strong>
+        <span>近隣のポイントやゲーム要素を表示するインタラクティブな地図UIを備えています。</span>
+      </li>
+
+      <li>
+        <strong>ライブデータ＆コンテンツ更新</strong>
+        <span>バックエンドにより新しいロケーションやイベントをアプリ更新なしで配信可能です。</span>
+      </li>
+
+      <li>
+        <strong>パフォーマンス最適化</strong>
+        <span>GPSポーリングやバッテリー消費に配慮した最適化を行っています。</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

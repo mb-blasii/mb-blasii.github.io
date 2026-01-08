@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>メタバース・ワールドエディタ – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>メタバース・ワールドエディタ</h1>
+    <h2>ランタイム編集・モジュラーUI・データ駆動ワールド</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      メタバース向けに設計されたカスタムランタイムワールドエディタで、ユーザーがゲーム内で直接
+      仮想環境を作成・編集・管理できます。
+    </p>
+    <p>
+      エディタUIはUnity風の操作感を模しており、経験のある開発者には馴染みやすく、
+      アーティストや非専門家には不要な複雑さを排した設計になっています。
+    </p>
+    <p>
+      モジュラーアーキテクチャにより、動的なエンティティ管理、コンポーネントベースのシステム、
+      ランタイムでの世界更新をサポートし、従来の開発ツールを必要としません。
+    </p>
+    <p>
+      拡張性、性能、使いやすさを重視し、クリエイターや非技術系ユーザーでも直感的にインタラクティブな世界を作れます。
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>スクリーンショット／デモ</h2>
+
+    <div class="media">
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/1RKSZgb1FOM"
+          title="Metaverse World Editor – Demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>ランタイムでの世界編集</strong>
+          <span>フルエンジンの学習を必要とせず、ランタイムでシーンやエンティティ、プロパティを編集できます。</span>
+      </li>
+
+      <li>
+        <strong>エンティティ＆コンポーネント設計</strong>
+          <span>柔軟なデータ駆動のワールド構築を実現するカスタムMetaEntity/MetaComponentシステムを備えています。</span>
+      </li>
+
+      <li>
+        <strong>動的アセットブラウザ</strong>
+          <span>実行時にロードされるアセットをフィルタやプレビューで扱え、バックエンドと同期してユーザー/ストア資産を取得します。</span>
+      </li>
+
+      <li>
+        <strong>ライブシーン再構築</strong>
+          <span>シリアライズされたデータからワールドを復元でき、永続化と素早い反復作業をサポートします。データはネットワーク使用量を抑えつつ迅速に読み込めるよう最適化されています。</span>
+      </li>
+
+      <li>
+        <strong>パフォーマンス重視の設計</strong>
+          <span>複雑な環境でも編集操作をレスポンシブに保つようランタイムワークフローを最適化しています。</span>
+      </li>
+
+      <li>
+        <strong>エディタとランタイムの分離</strong>
+          <span>コアシステムをエディタとクライアントで共有し、一貫性と保守性を確保しています。</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

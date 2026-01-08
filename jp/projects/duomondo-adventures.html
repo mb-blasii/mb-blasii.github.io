@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Duomondo Adventures – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Duomondo Adventures</h1>
+    <h2>モバイルゲーム・ジオタグ探索・Unity</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      Duomondo Adventures は現実世界の探索と軽い物語要素、クエスト進行を組み合わせた位置情報ベースの探索ゲームです。
+    </p>
+    <p>
+      プレイヤーは周辺を歩いて発見し、物語の断片を解除したり、実際のロケーションに配置されたジオタグコンテンツと
+      交流したりできます。
+    </p>
+    <p>
+      公園や博物館などの文化的な名所（POI）を、ファンタジー世界のナラティブを通じて発見・探索することを促します。
+    </p>
+    <p>
+      本作はイタリア国内での限定リリースでした。私はUnity開発者として、ゲームプレイシステム、探索メカニクス、
+      モバイル向けパフォーマンス最適化を担当しました。
+    </p>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="card">
+    <h2>スクリーンショット</h2>
+
+    <div class="media">
+
+      <img src="/assets/img/projects/duomondo-adventures/screenshot-01.png"
+           alt="Duomondo Adventures 探索画面"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo-adventures/screenshot-02.png"
+           alt="Duomondo Adventures story interface"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>ジオタグ探索</strong>
+        <span>実際の場所に紐づくゲーム要素で、屋外での発見を促します。</span>
+      </li>
+
+      <li>
+        <strong>ジオスペーシャル統合</strong>
+        <span>Googleのジオスペーシャルデータを利用し、GPSやPOIの位置精度と動作性能を最適化しています。</span>
+      </li>
+
+      <li>
+        <strong>ライトな物語進行</strong>
+        <span>探索を通して物語の断片や世界観がアンロックされます。</span>
+      </li>
+
+      <li>
+        <strong>マップ中心のUI</strong>
+        <span>インタラクティブな地図表示で近くのポイントへ誘導します。</span>
+      </li>
+
+      <li>
+        <strong>モバイルファーストのUX</strong>
+        <span>短時間プレイ、タッチ操作、外出先での使用を想定した設計です。</span>
+      </li>
+
+      <li>
+        <strong>パフォーマンス＆バッテリー最適化</strong>
+        <span>GPS利用やバックグラウンド処理を考慮したチューニングを施しています。</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

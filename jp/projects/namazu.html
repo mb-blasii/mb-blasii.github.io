@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Namazu's Fault – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/projects/namazu/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/projects/namazu/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/projects/namazu/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Namazu's Fault</h1>
+    <h2>受賞作・ゲームプレイ実装・システム設計</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      <strong>Namazu's Fault</strong> は <em>Scientific Game Jam Tokyo 2025</em> にて制作されたパズルゲームで、
+      <strong>Golden Pixel</strong> と <strong>Best Gameplay</strong> の両賞を受賞しました。
+    </p>
+    <p>
+      タイトな制作スケジュールの中で多職種のチームと共に作り上げたプロジェクトで、
+      私は主にゲームプレイの実装、システムアーキテクチャ、技術的な実装を担当しました。
+    </p>
+    <p>
+      コアメカニクス、インタラクションロジック、ゲーム全体のフロー設計に注力し、
+      バランスの取れた体験を作ることに貢献しました。
+    </p>
+  </section>
+
+  <!-- ITCH LINK -->
+  <section class="card">
+    <h2>プレイ</h2>
+    <p>
+      <strong>Namazu's Fault</strong> は Itch.io でプレイできます。
+    </p>
+
+    <a
+      href="https://namazu2025.itch.io/namazus-fault-team3"
+      target="_blank"
+      class="btn"
+    >
+      ▶ Itch.ioでプレイする
+    </a>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>スクリーンショット</h2>
+
+    <div class="media">
+      <img src="/assets/img/projects/namazu/screenshot-01.png"
+           alt="Namazu's Fault ゲームプレイ画面"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+           
+      <img src="/assets/img/projects/namazu/screenshot-02.png"
+           alt="Namazu's Fault gameplay screenshot"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    <div class="video-frame">
+        <iframe
+          src="https://youtube.com/embed/o3BFud1TzuE"
+          title="Namazu game demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+      <li>
+        <strong>パズルゲームプレイ</strong>
+          <span>科学的テーマとインタラクティブな思考を組み合わせたパズル体験です。</span>
+      </li>
+
+      <li>
+        <strong>受賞デザイン</strong>
+          <span>国際的なゲームジャムでビジュアルとゲームプレイの質が評価されました。</span>
+      </li>
+
+      <li>
+        <strong>コアなゲームプレイシステム</strong>
+          <span>プレイヤー操作、インタラクションロジック、進行フローの実装を行いました。</span>
+      </li>
+
+      <li>
+        <strong>チーム開発</strong>
+          <span>科学者、プログラマ、アーティストと密に連携し、ゲームメカニクスと科学的目的を整合させました。</span>
+      </li>
+
+      <li>
+        <strong>迅速なプロトタイピング</strong>
+          <span>厳しい期限内で概念からプレイ可能なビルドまで効率的に反復しました。</span>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

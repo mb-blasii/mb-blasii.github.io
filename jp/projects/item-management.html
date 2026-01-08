@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>アイテム管理システム – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>アイテム管理システム</h1>
+    <h2>ゲームプレイシステム・データアーキテクチャ・Unityツール</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      Unity向けに設計されたモジュラーなアイテム管理システムで、ID生成や管理を扱い、
+      インベントリや装備、ゲーム内経済のための堅牢で拡張性のある基盤を提供します。
+    </p>
+    <p>
+      プロトタイプから大規模プロダクションまで対応できるよう設計され、データ駆動のアプローチで
+      ゲームプレイシステムとシームレスに統合できます。
+    </p>
+    <p>
+      <a class="btn"
+         href="https://assetstore.unity.com/packages/tools/game-toolkits/xlib-aims-advanced-items-management-system-231236"
+         target="_blank" rel="noopener">
+        Unity Asset Storeで見る →
+      </a>
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>スクリーンショット</h2>
+
+    <div class="media">
+
+      <img src="/assets/img/projects/item-management/screenshot-01.png"
+           alt="アイテム管理システム エディタ画面"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/item-management/screenshot-02.png"
+           alt="Item management system editor view"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+        
+      <img src="/assets/img/projects/item-management/screenshot-03.png"
+           alt="Item management system editor view"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/item-management/screenshot-04.png"
+           alt="Item management system editor view"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>データ駆動のアイテム定義</strong>
+        <span>構造化されたアセットでアイテムを定義し、デザイナーがコードに触れず反復作業できます。</span>
+      </li>
+
+      <li>
+        <strong>ID管理</strong>
+        <span>ID生成を追跡して重複を解決し、多数の一意識別子を効率的に管理します。アイテム種別ごとにID範囲を分けることが可能です。</span>
+      </li>
+
+      <li>
+        <strong>スケーラブルなインベントリ</strong>
+        <span>プレイヤーインベントリ、コンテナ、ショップ、共有ストレージなどを一貫したルールでサポートします。</span>
+      </li>
+
+      <li>
+        <strong>ランタイムインスタンシング</strong>
+        <span>静的なアイテムデータとランタイムインスタンスを明確に分離し、耐久性や修飾、状態管理に対応します。</span>
+      </li>
+
+      <li>
+        <strong>エディタツール</strong>
+        <span>カスタムインスペクタやユーティリティでコンテンツ作成と検証を効率化します。</span>
+      </li>
+
+      <li>
+        <strong>システム指向アーキテクチャ</strong>
+        <span>戦闘、クエスト、進行システムとクリーンに統合できる設計です。</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

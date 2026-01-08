@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>カスタム・ノードベース対話システム – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>カスタム・ノードベース対話システム</h1>
+    <h2>対話ツール・ゲームプレイシステム・Unityエディタ拡張</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      Unityで構築したノードベースの対話システムで、デザイナー向けの視覚的インターフェイスを通じて
+      複雑なナラティブフローを設計できます。
+    </p>
+    <p>
+      ライターやデザイナーがコードに触れずに分岐会話、条件ロジック、再利用可能な対話コンポーネントを作成可能です。
+    </p>
+    <p>
+      設計、エディタツール、ランタイムシステム、データシリアライズまで私が一貫して開発しました。
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>スクリーンショット</h2>
+
+    <div class="media">
+      <img src="/assets/img/projects/dialogue-node/screenshot-01.jpeg"
+           alt="ノードベース対話エディタのスクリーンショット" class="project-image" onclick="openLightbox(this.src)">
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+  <h2>主な特徴</h2>
+
+  <ul class="feature-list">
+    <li>
+      <strong>プレイヤー＆NPCの台詞</strong>
+      <span>プレイヤー主導・NPC主導の会話双方に対応しています。</span>
+    </li>
+
+    <li>
+      <strong>マルチキャラクター会話</strong>
+      <span>上書き可能なノードで会話中の話者変更を行えます。</span>
+    </li>
+
+    <li>
+      <strong>トリガーノード</strong>
+      <span>文字列キーでイベントを呼び出し、アニメーションやカメラ操作、アクションやクエストシステムを連携できます。</span>
+    </li>
+
+    <li>
+      <strong>コールバックノード</strong>
+      <span>メソッドやイベントのコールバックでグローバルシステムとシームレスに統合できます。</span>
+    </li>
+
+    <li>
+      <strong>データ駆動アーキテクチャ</strong>
+      <span><em>ScriptableObject</em>を基盤にしたモジュラーでスケーラブル、チームに優しいワークフロー設計です。</span>
+    </li>
+
+    <li>
+      <strong>ランタイム最適化</strong>
+      <span>ビルド時に対話グラフを最適化し、ランタイムのオーバーヘッドを最小限に抑えています。</span>
+    </li>
+
+    <li>
+      <strong>分岐とループ</strong>
+      <span>条件分岐や永続的なループを含む複雑なナラティブ構造をネイティブにサポートします。</span>
+    </li>
+  </ul>
+</section>
+
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

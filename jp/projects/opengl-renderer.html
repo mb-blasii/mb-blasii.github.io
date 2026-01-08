@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>OpenGLレンダラ – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/jp/" class="back-btn">← ポートフォリオに戻る</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>OpenGLレンダラ</h1>
+    <h2>グラフィックスプログラミング・エンジン設計・C++</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>プロジェクト概要</h2>
+    <p>
+      OpenGLを用いたC++製のリアルタイムレンダラで、低レベルのグラフィックスプログラミングや現代的なレンダリング手法を探求するためのプロジェクトです。
+    </p>
+    <p>
+      クリーンでモジュラーなレンダリングアーキテクチャを構築し、アセット読み込みからフレーム表示までのパイプライン全体を扱います。
+    </p>
+    <p>
+      技術学習を目的としたプロジェクトで、パフォーマンス、コードの明瞭さ、エンジン風の構造に重点を置いて開発しました。
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>スクリーンショット／デモ</h2>
+
+    <div class="media">
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/xiUVUc_xn9w"
+          title="OpenGLレンダラ – デモ"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <img src="/assets/img/projects/opengl-renderer/screenshot-01.jpeg"
+           alt="OpenGLレンダラ シーンプレビュー"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>主な特徴</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>モダンなOpenGLパイプライン</strong>
+        <span>コアプロファイル、プログラマブルシェーダ、明示的なリソース管理に基づく実装です。</span>
+      </li>
+
+      <li>
+        <strong>コンポーネントベースのレンダラ設計</strong>
+        <span>レンダーパス、シーン管理、アセット処理を明確に分離しています。</span>
+      </li>
+
+      <li>
+        <strong>シェーダーシステム</strong>
+        <span>複数のライトモデルやマテリアル定義に対応したカスタムシェーダーローダーを備えています。</span>
+      </li>
+
+      <li>
+        <strong>カメラ＆トランスフォーム</strong>
+        <span>ビュー/射影行列や階層トランスフォームを備えたカメラパイプラインを実装しています。</span>
+      </li>
+
+      <li>
+        <strong>アセット読み込みパイプライン</strong>
+        <span>メッシュ・テクスチャの読み込みをキャッシュとリソースライフタイム管理でサポートします。</span>
+      </li>
+
+      <li>
+        <strong>パフォーマンス重視の設計</strong>
+        <span>ドローコールやステート変更を最小化してスケーラブルなリアルタイムレンダリングを目指しています。</span>
+      </li>
+
+      <li>
+        <strong>高水準フレームワーク設計</strong>
+        <span>OpenGLや数学関数のラッパーと抽象化を導入し、モダンなコーディングスタイルを実現します。</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>
