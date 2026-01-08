@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Renderer OpenGL – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/it/" class="back-btn">← Torna al portfolio</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Renderer OpenGL</h1>
+    <h2>Programmazione grafica · Architettura Engine · C++</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>Panoramica del progetto</h2>
+    <p>
+      Un renderer real-time personalizzato scritto in C++ usando OpenGL, progettato per esplorare
+      la programmazione grafica a basso livello e le tecniche di rendering moderne.
+    </p>
+    <br>
+    <p>
+      Il progetto si concentra sulla costruzione di un'architettura di rendering pulita e modulare,
+      coprendo l'intera pipeline dal caricamento degli asset alla presentazione dei frame.
+    </p>
+    <p>
+      Sviluppato come progetto tecnico di apprendimento con forte attenzione alle prestazioni,
+      alla chiarezza del codice e a una struttura in stile engine.
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>Screenshots</h2>
+
+    <div class="media">
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/xiUVUc_xn9w"
+          title="Demo Renderer OpenGL"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <img src="/assets/img/projects/opengl-renderer/screenshot-01.jpeg"
+           alt="Anteprima scena renderer OpenGL"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>Features</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>Pipeline OpenGL moderna</strong>
+        <span>Implementazione basata su core profile con shader programmabili e gestione esplicita delle risorse.</span>
+      </li>
+
+      <li>
+        <strong>Architettura renderer basata su componenti</strong>
+        <span>Separazione chiara tra rendering pass, gestione della scena e caricamento asset.</span>
+      </li>
+
+      <li>
+        <strong>Sistema shader</strong>
+        <span>Loader shader personalizzato con supporto per multipli modelli di illuminazione e definizioni di materiali.</span>
+      </li>
+
+      <li>
+        <strong>Sistema camera & transform</strong>
+        <span>Pipeline camera completa con matrici view/projection e trasformazioni gerarchiche.</span>
+      </li>
+
+      <li>
+        <strong>Pipeline di caricamento asset</strong>
+        <span>Supporto per caricamento di mesh e texture con caching e gestione del lifecycle delle risorse.</span>
+      </li>
+
+      <li>
+        <strong>Design orientato alle prestazioni</strong>
+        <span>Focus sulla minimizzazione delle draw call e dei cambi di stato per un rendering real-time scalabile.</span>
+      </li>
+
+      <li>
+        <strong>Design di framework di alto livello</strong>
+        <span>Wrapper e astrazioni per OpenGL e funzioni matematiche per ottenere uno stile di programmazione più moderno.</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

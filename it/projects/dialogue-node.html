@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Sistema di dialogo basato su nodi – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/it/" class="back-btn">← Torna al portfolio</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Sistema di dialogo basato su nodi</h1>
+    <h2>Strumenti per dialoghi · Sistemi di gameplay · Estensione per Unity Editor</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>Panoramica del progetto</h2>
+    <p>
+      Un sistema di dialoghi basato su nodi realizzato in Unity per progettare flussi narrativi complessi
+      tramite un'interfaccia visuale pensata per i designer.
+    </p>
+    <p>
+      Il sistema permette a scrittori e designer di creare conversazioni ramificate, logiche condizionali
+      e componenti di dialogo riutilizzabili senza scrivere codice.
+    </p>
+    <p>
+      Sviluppato interamente da me, coprendo architettura, strumenti editor, sistemi runtime
+      e serializzazione dei dati.
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>Screenshots</h2>
+
+    <div class="media">
+      <img src="/assets/img/projects/dialogue-node/screenshot-01.jpeg"
+           alt="Screenshot editor sistema di dialogo a nodi" class="project-image" onclick="openLightbox(this.src)">
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+  <h2>Features</h2>
+
+  <ul class="feature-list">
+    <li>
+      <strong>Linee di dialogo per giocatore e NPC</strong>
+      <span>Pieno supporto per conversazioni guidate dal giocatore e dal NPC.</span>
+    </li>
+
+    <li>
+      <strong>Conversazioni multi-personaggio</strong>
+      <span>I nodi sovrascrivibili permettono di cambiare il parlante durante una conversazione.</span>
+    </li>
+
+    <li>
+      <strong>Nodi trigger</strong>
+      <span>Invoca eventi tramite chiavi stringa, permettendo animazioni, cambi di camera e integrazioni con sistemi di missione.</span>
+    </li>
+
+    <li>
+      <strong>Nodi callback</strong>
+      <span>Integrazione fluida con sistemi globali tramite callback di metodi ed eventi.</span>
+    </li>
+
+    <li>
+      <strong>Architettura guidata dai dati</strong>
+      <span>Basata su <em>ScriptableObjects</em> per modularità, scalabilità e flussi di lavoro adatti al team.</span>
+    </li>
+
+    <li>
+      <strong>Ottimizzazione runtime</strong>
+      <span>I grafi di dialogo vengono ottimizzati in fase di build per ridurre l'overhead a runtime.</span>
+    </li>
+
+    <li>
+      <strong>Ramificazioni e cicli</strong>
+      <span>Supporto nativo per strutture narrative complesse con percorsi condizionali e cicli persistenti.</span>
+    </li>
+  </ul>
+</section>
+
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

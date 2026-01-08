@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Duomondo – Gioco Mobile – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/it/" class="back-btn">← Torna al portfolio</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Duomondo</h1>
+    <h2>Gioco mobile · Gameplay basato sulla posizione · Backend</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>Panoramica del progetto</h2>
+    <p>
+      Duomondo è un gioco mobile basato sulla posizione ispirato alle meccaniche di esplorazione come PokemonGO,
+      progettato per incoraggiare i giocatori a scoprire luoghi e interagire con l'ambiente circostante.
+    </p>
+    <br>
+    <p>
+      Il progetto combina gameplay basato su GPS con sistemi di progressione, contenuti da collezionare, missioni
+      e meccaniche social leggere, pensato per un pubblico casual e giovane.
+    </p>
+    <br>
+    <p>
+      Il gioco è stato rilasciato esclusivamente in Italia. Ho lavorato come Unity Developer,
+      concentrandomi su sistemi di gameplay, ottimizzazione mobile, implementazione tecnica e design del backend.
+    </p>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="card">
+    <h2>Screenshots</h2>
+
+    <div class="media">
+
+      <img src="/assets/img/projects/duomondo/screenshot-01.png"
+           alt="Esplorazione mappa Duomondo"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo/screenshot-02.png"
+           alt="Duomondo map exploration"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo/screenshot-03.png"
+           alt="Duomondo map exploration"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+      <img src="/assets/img/projects/duomondo/screenshot-04.png"
+           alt="Duomondo map exploration"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>Features</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>Gameplay basato sulla posizione</strong>
+        <span>Posizionamento GPS reale usato per guidare l'esplorazione e le interazioni di gioco.</span>
+      </li>
+
+      <li>
+        <strong>Integrazione Geospatial di Google</strong>
+        <span>Posizionamento e dati mappa integrati con le API Geospatial e Google Maps per un posizionamento accurato.</span>
+      </li>
+
+      <li>
+        <strong>Sistemi di progressione e collezione</strong>
+        <span>I giocatori sbloccano contenuti, ricompense e obiettivi visitando luoghi e completando attività.</span>
+      </li>
+
+      <li>
+        <strong>UX orientata al mobile</strong>
+        <span>Progettata specificamente per input touch, sessioni brevi e uso all'aperto.</span>
+      </li>
+
+      <li>
+        <strong>Integrazione mappa</strong>
+        <span>Interfaccia mappa interattiva che mostra i punti di interesse e gli elementi di gameplay vicini.</span>
+      </li>
+
+      <li>
+        <strong>Aggiornamenti live di dati e contenuti</strong>
+        <span>Contenuti gestiti dal backend che permettono nuove location ed eventi senza aggiornamenti dell'app.</span>
+      </li>
+
+      <li>
+        <strong>Ottimizzazione delle prestazioni</strong>
+        <span>Gestione attenta del polling GPS, consumo batteria e vincoli di prestazioni mobile.</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Sistema di dialogo con Animator – Matteo Blasoni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<a href="/it/" class="back-btn">← Torna al portfolio</a>
+
+<header class="site-header">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="/en/"><img src="/assets/img/lang/en.png" alt="English"></a>
+    <a href="/jp/"><img src="/assets/img/lang/jp.png" alt="日本語"></a>
+    <a href="/it/"><img src="/assets/img/lang/it.png" alt="Italiano"></a>
+  </div>
+
+  <!-- Hero block -->
+  <div class="hero-block">
+    <h1>Sistema di dialogo con Animator</h1>
+    <h2>Strumenti di animazione · Sistemi narrativi · Estensione per Unity Editor</h2>
+  </div>
+
+</header>
+
+<div class="container">
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>Panoramica del progetto</h2>
+    <p>
+      Strumento per Unity progettato come alternativa semplice al mio sistema di dialoghi basato su nodi,
+      per integrare in modo stretto i flussi di dialogo con il sistema Animator di Unity.
+    </p>
+    <br>
+    <p>
+      Il sistema utilizza gli stati dell'Animator come sorgente grafica per i nodi di dialogo, mentre i
+      StateMachineBehaviour forniscono la logica necessaria per sviluppare flussi di dialogo robusti.
+    </p>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="card">
+    <h2>Screenshots</h2>
+
+    <div class="media">
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/7EoNNo13zzA"
+          title="Demo Sistema di dialogo con Animator"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+       <img src="/assets/img/projects/dialogue-animator/screenshot-01.png"
+         alt="Editor sistema di dialogo con Animator"
+           class="project-image"
+           onclick="openLightbox(this.src)">
+
+    </div>
+  </section>
+
+  <!-- PROJECT FEATURES -->
+  <section class="card">
+    <h2>Features</h2>
+
+    <ul class="feature-list">
+
+      <li>
+        <strong>Macchina a stati visuale</strong>
+        <span>Interfaccia pensata per i designer per collegare la logica dei dialoghi ai flussi di animazione.</span>
+      </li>
+
+      <li>
+        <strong>Cicli e diramazioni</strong>
+        <span>Gli stati possono essere connessi per formare cicli o avere uscite multiple
+          per ramificare il dialogo in base alle scelte del giocatore.</span>
+      </li>
+
+      <li>
+        <strong>Voiceover</strong>
+        <span>Ogni battuta può avere una traccia voce. Il voiceover supporta anche la localizzazione.</span>
+      </li>
+
+      <li>
+        <strong>Dialoghi localizzabili</strong>
+        <span>I dialoghi possono essere localizzati tramite string integrate nel sistema di localizzazione del gioco.</span>
+      </li>
+
+      <li>
+        <strong>Architettura modulare</strong>
+        <span>Progettato per essere estendibile e supportare nuovi sistemi di animazione e strumenti narrativi.</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 – Matteo Blasoni
+</footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+</body>
+</html>
